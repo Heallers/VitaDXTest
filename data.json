@@ -1,0 +1,106 @@
+[
+  {
+    "user": "annotator_001",
+    "project_id": "019mr8mf4a",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_001",
+    "project_id": "019mr8mf4b",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_002",
+    "project_id": "019mr8mf4c",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_003",
+    "project_id": "019mr8mf4d",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_004",
+    "project_id": "019mr8mf4d",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_005",
+    "project_id": "019mr8mf4e",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_006",
+    "project_id": "019mr8mf4f",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_007",
+    "project_id": "019mr8mf4g",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_008",
+    "project_id": "019mr8mf4h",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_009",
+    "project_id": "019mr8mf4i",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_010",
+    "project_id": "019mr8mf4j",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_011",
+    "project_id": "019mr8mf4k",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  },
+  {
+    "user": "annotator_012",
+    "project_id": "019mr8mf4l",
+    "asset_id": "dzakdzoka344323fzef.jpg",
+    "label": "UROTHELIAL",
+    "is_last_checkpoint": true,
+    "date": "2021-03-12T16:09:40Z"
+  }
+]
