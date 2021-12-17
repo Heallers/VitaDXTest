@@ -81,8 +81,54 @@ def get_projects_with_more_than_15_assets(_user, _begin, _end):
     return l_result
 
 
+def get_annotations_with_project_type(_project_id):
+    print("get_annotations_with_project_type for project " + _project_id)
+    l_annotations = jsonManager.parse_annotations()
+    print(l_annotations)
+    l_projects = jsonManager.parse_projects()
+    print(l_projects)
+
+    l_project_type = ''
+    for l_project in l_projects:
+        if l_project['project_id'] == _project_id:
+            l_project_type = l_project['project_type']
+            break
+
+    l_assets_dict = {}
+    l_result = []
+    for l_annotation in l_annotations:
+        if l_annotation['project_id'] == _project_id:
+            if l_annotation['asset_id'] not in l_assets_dict:
+                l_assets_dict[l_annotation['asset_id']] = []
+            l_asset_annotation = {
+                "user": l_annotation['user'],
+                "label": l_annotation['label'],
+                "date": l_annotation['date'],
+            }
+            print(l_annotation)
+            print(l_annotation['asset_id'])
+            l_assets_dict[l_annotation['asset_id']].append(l_asset_annotation)
+
+    l_assets = []
+    for l_asset in l_assets_dict.items():
+        l_assets.append({
+            "asset_id": l_asset[0],
+            "annotations": l_asset[1]
+        })
+
+    l_result.append({
+        "project_id": _project_id,
+        "project_type": l_project_type,
+        "assets": l_assets
+    })
+
+    print(l_result)
+    return l_result
+
+
 def initialize():
     get_number_annotations_by_user()
     get_number_annotations_by_project()
     get_assets_with_majority_different_labels('019mr8mf4a')
     get_projects_with_more_than_15_assets('annotator_001', "2021-03-12T16:09:40Z", "2022-03-12T16:09:40Z")
+    get_annotations_with_project_type('019mr8mf4a')
