@@ -24,21 +24,21 @@ Les "extra project fields" se trouvent dans projects.json
 Permet de récupérer les annotations telles quel transmises au système
 
 
-# GET /number_annotations_by_user (Feature 1)
-Permet de récupérer le nombre d'annotations par user
+# GET /number_annotations_by_user 
+Permet de récupérer le nombre d'annotations par user (Feature 1)
 
 
-# GET /number_annotations_by_project (Feature 1)
-Permet de récupérer le nombre d'annotations par project_id
+# GET /number_annotations_by_project 
+Permet de récupérer le nombre d'annotations par project_id (Feature 1)
 
 
-# GET /assets_with_majority_different_labels (Feature 2)
-Permet de récupérer les assets d'un projet où la majorité des users n'ont pas mis le même label
+# GET /assets_with_majority_different_labels 
+Permet de récupérer les assets d'un projet où la majorité des users n'ont pas mis le même label (Feature 2)
 - _project_id : L'identifiant du projet
 
 
-# GET /projects_with_more_than_15_assets (Feature 3)
-Permet de récupérer les projets avec plus de 15 assets pour un user et une période donnés
+# GET /projects_with_more_than_15_assets 
+Permet de récupérer les projets avec plus de 15 assets pour un user et une période donnés (Feature 3)
 - _user  : L'identifiant du user
 - _begin : Le début de la période. Format: '%Y-%m-%dT%H:%M:%SZ'
 - _end   : La fin de la période. Format: '%Y-%m-%dT%H:%M:%SZ'
