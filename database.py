@@ -1,5 +1,5 @@
 import jsonManager
-
+import datetime
 
 def get_annotations():
     print("get_annotations")
@@ -53,9 +53,36 @@ def get_assets_with_majority_different_labels(_project_id):
             l_result.append(l_tuple[0])
 
     print(l_result)
+    return l_result
+
+
+def get_projects_with_more_than_15_assets(_user, _begin, _end):
+    print("get_projects_with_more_than_15_assets for user " + _user)
+    l_annotations = jsonManager.parse_annotations()
+    l_assets_by_project = {}
+
+    l_begin = datetime.datetime.strptime(_begin, '%Y-%m-%dT%H:%M:%SZ').timestamp()
+    l_end = datetime.datetime.strptime(_end, '%Y-%m-%dT%H:%M:%SZ').timestamp()
+
+    for l_annotation in l_annotations:
+        if l_annotation['user'] == _user:
+            l_date = datetime.datetime.strptime(l_annotation['date'], '%Y-%m-%dT%H:%M:%SZ').timestamp()
+            if l_begin <= l_date <= l_end:
+                if l_annotation['project_id'] not in l_assets_by_project:
+                    l_assets_by_project[l_annotation['project_id']] = []
+                l_assets_by_project[l_annotation['project_id']].append(l_annotation['asset_id'])
+
+    l_result = []
+    for l_tuple in l_assets_by_project.items():
+        if len(l_tuple[1]) > 15:
+            l_result.append(l_tuple[0])
+
+    print(l_result)
+    return l_result
 
 
 def initialize():
     get_number_annotations_by_user()
     get_number_annotations_by_project()
     get_assets_with_majority_different_labels('019mr8mf4a')
+    get_projects_with_more_than_15_assets('annotator_001', "2021-03-12T16:09:40Z", "2022-03-12T16:09:40Z")
