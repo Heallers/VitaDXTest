@@ -18,6 +18,29 @@ Aller sur le lien "http://localhost:8080/docs#/"
 Les annotations se trouvent dans le fichier data.json
 Les "extra project fields" se trouvent dans projects.json
 
+############### Project architecture ###############
+
+Le Back peut fonctionner sous la forme d'une API avec différentes routes.
+Cela permettrait, une fois hebergé, aux différentes équipes d'avoir accès aux données et de pouvoir plus facilement intégrer l'API à d'autres solutions existantes.
+
+Pour une mise en production il faut tout d'abord que le Front puisse communiquer les annotations directement au Back.
+On peut donc imaginer ici des routes supplémentaires pour insérer des nouvelles données.
+
+Le Back doit quand à lui stocker toutes les informations dans une base de données.
+
+On pourrait imaginer:
+* une table pour les users
+* une table pour les projets
+* une table pour les annotations
+
+|--------------|      |--------------|      |--------------|
+|              |      |              |      |              |
+|   FrontEnd   | ---- |   BackEnd    | ---- |     BDD      | 
+|              |      |              |      |              | 
+|--------------|      |--------------|      |--------------|
+
+À cela doivent s'ajouter des tests unitaires (en python avec le package unittest) avec des données de test plus fournies.
+
 
 ############### Routes ###############
 
