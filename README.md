@@ -34,9 +34,11 @@ On pourrait imaginer:
 * une table pour les annotations
 
 |--------------|      |--------------|      |--------------|
-|              |      |              |      |              |
+
+
 |   FrontEnd   | ---- |   BackEnd    | ---- |     BDD      | 
-|              |      |              |      |              | 
+
+
 |--------------|      |--------------|      |--------------|
 
 À cela doivent s'ajouter des tests unitaires (en python avec le package unittest) avec des données de test plus fournies.
